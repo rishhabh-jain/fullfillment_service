@@ -35,7 +35,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-9 sm:top-10 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
           ? "bg-white/70 backdrop-blur-xl border-b border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.06)]"
           : "bg-transparent"
@@ -110,7 +110,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden fixed top-16 left-0 right-0 bg-white border-b border-gray-200 shadow-lg z-40"
+            className="md:hidden fixed top-[100px] sm:top-[104px] left-0 right-0 bg-white border-b border-gray-200 shadow-lg z-40"
           >
             <div className="px-4 py-4 space-y-1">
               {navLinks.map((link) => (

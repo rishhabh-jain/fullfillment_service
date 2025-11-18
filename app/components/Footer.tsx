@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import { Phone, MapPin, Linkedin, MessageCircle } from "lucide-react";
 
 const quickLinks = [
   { name: "Services", href: "#services" },
@@ -76,20 +76,22 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:support@orderpack.in"
-                  className="flex items-center space-x-2 text-sm hover:text-primary transition-colors"
-                >
-                  <Mail className="h-4 w-4" />
-                  <span>support@orderpack.in</span>
-                </a>
-              </li>
-              <li>
-                <a
                   href="tel:+919561079271"
                   className="flex items-center space-x-2 text-sm hover:text-primary transition-colors"
                 >
                   <Phone className="h-4 w-4" />
                   <span>+91 95610 79271</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/919561079271"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 text-sm hover:text-green-500 transition-colors"
+                >
+                  <MessageCircle className="h-4 w-4" />
+                  <span>WhatsApp</span>
                 </a>
               </li>
               <li>

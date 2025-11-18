@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Phone, MessageCircle, Mail, Clock, ShieldCheck, Target, ArrowRight } from "lucide-react";
+import { Phone, MessageCircle, Clock, ShieldCheck, Target, ArrowRight } from "lucide-react";
 
 const trustIndicators = [
   { icon: Clock, text: "24-Hour Processing" },
@@ -12,7 +12,7 @@ const trustIndicators = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 lg:pt-24 overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-24 lg:pt-28 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-[#fafafa] -z-10" />
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-50/50 to-transparent -z-10" />
@@ -159,19 +159,6 @@ export default function Hero() {
                   <ArrowRight className="h-4 w-4 text-gray-400 group-hover:text-green-600 transition-colors" />
                 </a>
 
-                <a
-                  href="mailto:support@orderpack.in"
-                  className="flex items-center gap-4 p-4 bg-gray-50 hover:bg-gray-100 transition-colors group"
-                >
-                  <div className="w-10 h-10 bg-white border border-gray-200 flex items-center justify-center">
-                    <Mail className="h-4 w-4 text-gray-700" />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-sm font-medium text-gray-900">Email</p>
-                    <p className="text-sm text-gray-500">support@orderpack.in</p>
-                  </div>
-                  <ArrowRight className="h-4 w-4 text-gray-400 group-hover:text-gray-900 transition-colors" />
-                </a>
               </div>
 
               <div className="mt-8 pt-6 border-t border-gray-100">

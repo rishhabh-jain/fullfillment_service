@@ -155,7 +155,6 @@ export default function Pricing() {
             Important Notes
           </h4>
           <ul className="text-sm text-gray-600 space-y-1">
-            <li><strong>Minimum billing:</strong> ₹20,000/month</li>
             <li><strong>Long-term Storage:</strong> 2X charges beyond DOI (96 days apparel, 36 days others)</li>
             <li><strong>Packaging/RTV Storage:</strong> ₹900/pallet/month</li>
           </ul>
