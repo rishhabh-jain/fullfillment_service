@@ -67,7 +67,9 @@ export default function CTA() {
         // Fire Google Ads conversion event
         if (typeof window !== 'undefined' && (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag) {
           (window as unknown as { gtag: (...args: unknown[]) => void }).gtag('event', 'conversion', {
-            'send_to': process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_ID,
+            'send_to': 'AW-17741676089/bCdPCOzXwcIbELn88YtC',
+            'value': 1.0,
+            'currency': 'INR'
           });
         }
       } else {
