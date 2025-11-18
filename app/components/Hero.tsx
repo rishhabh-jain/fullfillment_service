@@ -12,7 +12,7 @@ const trustIndicators = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-28 lg:pt-32 overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-20 lg:pt-24 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-[#fafafa] -z-10" />
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-50/50 to-transparent -z-10" />
