@@ -110,14 +110,14 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden absolute top-full left-0 right-0 bg-white/90 backdrop-blur-xl border-b border-gray-200/50 shadow-lg"
+            className="md:hidden fixed top-[104px] left-0 right-0 bg-white border-b border-gray-200 shadow-lg z-40"
           >
-            <div className="px-4 py-6 space-y-1">
+            <div className="px-4 py-4 space-y-1">
               {navLinks.map((link) => (
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
-                  className="block w-full text-left px-4 py-3 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50/50 transition-colors"
+                  className="block w-full text-left px-4 py-3 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors"
                 >
                   {link.name}
                 </button>
