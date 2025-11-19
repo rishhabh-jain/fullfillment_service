@@ -65,8 +65,8 @@ export default function CTA() {
         reset();
 
         // Fire Google Ads conversion event
-        if (typeof window !== 'undefined' && (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag) {
-          (window as unknown as { gtag: (...args: unknown[]) => void }).gtag('event', 'conversion', {
+        if (typeof window !== 'undefined' && typeof (window as typeof window & { gtag?: (command: string, event: string, params: object) => void }).gtag === 'function') {
+          (window as typeof window & { gtag: (command: string, event: string, params: object) => void }).gtag('event', 'conversion', {
             'send_to': 'AW-17741676089/bCdPCOzXwcIbELn88YtC',
             'value': 1.0,
             'currency': 'INR'
