@@ -9,6 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/favicon.png",
+  },
   title: "OrderPack - 3PL Fulfillment Services in Gurgaon | Delhi NCR",
   description:
     "Professional 3PL fulfillment services for D2C brands in Gurgaon, Delhi NCR. 24-hour processing, 99.9% accuracy. Pick & pack, storage, returns. Get free quote today!",
