@@ -58,8 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.png" type="image/png" />
-        {/* Google Ads Conversion Tracking - Replace with your actual IDs */}
+        {/* Google Ads Conversion Tracking */}
         {process.env.NEXT_PUBLIC_GOOGLE_ADS_ID && (
           <>
             <script
